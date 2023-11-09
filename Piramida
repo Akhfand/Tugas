@@ -7,3 +7,63 @@ for i in range(tinggi):
     for k in range(2 * i + 1):
         print ('*', end='')
     print()
+
+
+#Tugas Piramida Siku Bintang
+tinggi = int(input("Mau seberapa tinggi kak: "))
+
+for i in range(tinggi):
+    for k in range(2 * i + 1):
+        print ('*', end='')
+    for j in range(tinggi - i - 1):
+        print (' ', end='')
+    print()
+
+
+#Tugas List
+makanan = ['Nasi', 'Buah', 'Sayur', 'Kue']
+for i in makanan :
+    if i == 'Kue' :
+        break
+    print   (i)
+
+
+#Tugas If dan Else
+angka = float(input("Coba Masukin Angkanya Kak: "))
+
+if angka > 0 :
+    print ("Bilangan Positif Ya, Kak!")
+elif angka == 0 :
+    print ("Angka Nol Ini Mah, Kak!")
+else:
+    print ("Bilangan Negatif Kalau Ini Mah!")
+
+
+#Tugas If dan Else 2
+
+angka = int(input("masukan bilangan bulat: "))
+if angka % 2 == 0 :    
+    print ("genap")
+else :
+    print ("ganjil")
+
+
+#Tugas perulangan (for)
+ulang = int(input("Jumlah mahasiswa: "))
+
+uts = []
+uas = []
+
+for i in range(ulang):
+    print ("data ke- ", (i+1))
+    nim = input("Masukan nim anda: ")
+    uts.append(int(input("Masukan nilai uts anda: ")))
+    uas.append(int(input("Masukan nilai uas anda: ")))
+    print ("nim adalah %s nilai uts anda %i nilai uas anda %i"% (nim,uts[i],uas[i]))
+    print ("---------------------------\n")
+
+rata_uts = sum(uts) / ulang
+rata_uas = sum(uas) / ulang
+
+print ("Rata - rata nilai uts mahasiswa sebesar %i"% (rata_uts))
+print ("Rata - rata nilai uas mahasiswa sebesar %i"% (rata_uas))
